@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="name"></h2>
+<p id="syntax"></p>
+<p id="purpose"></p>
+
+<script>
+var url = new URL(window.location);
+var f = url.searchParams.get("f");
+
+document.getElementById("name").innerHTML = f + "()";
+
+if(f == "alert"){
+    document.getElementById("syntax").innerHTML = "alert(msg)";
+    document.getElementById("purpose").innerHTML = "Shows message box";
+}
+else if(f == "parseInt"){
+    document.getElementById("syntax").innerHTML = "parseInt(value)";
+    document.getElementById("purpose").innerHTML = "Convert to integer";
+}
+else if(f == "isNaN"){
+    document.getElementById("syntax").innerHTML = "isNaN(value)";
+    document.getElementById("purpose").innerHTML = "Check not a number";
+}
+else if(f == "eval"){
+    document.getElementById("syntax").innerHTML = "eval(code)";
+    document.getElementById("purpose").innerHTML = "Run JS code";
+}
+else if(f == "prompt"){
+    document.getElementById("syntax").innerHTML = "prompt(text)";
+    document.getElementById("purpose").innerHTML = "Take user input";
+}
+</script>
+
+</body>
+</html>

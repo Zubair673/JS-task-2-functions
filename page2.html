@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Functions</h2>
+        <p><b>Syntax:</b></p>
+        <p>Function name() {}</p>
+        <p><b>Usage:</b></p>
+        <p>Used to perform tasks</p>
+        <p><b> Functions List</b></p>
+        <ul>
+            <li onclick="go('alert')()">alert</li>
+            <li onclick="go('parseInt')()">parseInt</li>
+            <li onclick="go('eval')()">eval</li>
+            <li onclick="go('prompt')()">prompt</li>
+           <style>
+li {
+    cursor: pointer;       
+    color: blue;           
+    margin: 5px 0;         
+}
+li:hover {
+    text-decoration: underline;
+}
+</style>
+        </ul>
+
+            <script>
+                function go(name) {
+                    window.location="page3.html?f="+name;
+                }
+            </script>
+    </body>
+</html>
