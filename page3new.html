@@ -32,6 +32,31 @@ else if(f == "prompt"){
     document.getElementById("syntax").innerHTML = "prompt(text)";
     document.getElementById("purpose").innerHTML = "Take user input";
 }
+    else if(f == "setTimeout"){
+    syntax("setTimeout(function, time)", "Runs function after delay");
+}
+else if(f == "setInterval"){
+    syntax("setInterval(function, time)", "Runs function repeatedly");
+}
+else if(f == "clearInterval"){
+    syntax("clearInterval(id)", "Stops interval");
+}
+else if(f == "arrow"){
+    syntax("() => {}", "Short way to write functions");
+}
+else if(f == "template"){
+    syntax("`Hello ${name}`", "String with variables inside");
+}
+else if(f == "destructuring"){
+    syntax("let {a, b} = obj", "Extract values from objects/arrays");
+}
+else if(f == "spread"){
+    syntax("...array", "Expand elements");
+}
+else if(f == "rest"){
+    syntax("function(...args)", "Take multiple values");
+}
+
 </script>
 
 </body>
